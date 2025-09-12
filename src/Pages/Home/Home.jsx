@@ -4,6 +4,10 @@ import TextType from "@/components/TextType"
 import { motion } from "framer-motion"
 import PageWrapper from "@/components/PageWrapper"
 import { Button } from "@/components/ui/button"
+import { Link } from "react-router-dom"
+import { Eye } from "lucide-react"
+import { FiGithub } from "react-icons/fi";
+import { AiOutlineEye } from "react-icons/ai";
 
 
 const Home = () => {
@@ -41,13 +45,13 @@ const developmentLogos = [
 
 
 const ProjectsArray = [
-  { title: 'Ecommerce Web Application With Full Features', tech:['',''], images:['', ''], livelink:'', githublink: '',
+  { title: 'Ecommerce Web Application With Full Features', tech:['React', 'Tailwind','Nodejs', 'Express', 'MongoDB'], images:['http://localhost:5173/src/assets/images/proimage1.png', ''], livelink:'https://yahia-shop.netlify.app', githublink: '',
     icon: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye-icon lucide-eye"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"/><circle cx="12" cy="12" r="3"/></svg>'
   },
-  { title: 'Mini Ecommerce Web Application', tech:['',''], images:['', ''], livelink:'', githublink: '',
+  { title: 'Mini Ecommerce Web Application', tech:['Vite', 'Tailwind','Nodejs', 'Express', 'MongoDB'], images:['http://localhost:5173/src/assets/images/proimage2.png', ''], livelink:'https://yahiastore.netlify.app/', githublink: '',
     icon: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye-icon lucide-eye"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"/><circle cx="12" cy="12" r="3"/></svg>'
   },
-  { title: 'My Portfolio', tech:['',''], images:['', ''], livelink:'', githublink: '',
+  { title: 'My Portfolio', tech:['Vite', 'Tailwind','Framer Motion', 'Shadcn'], images:['http://localhost:5173/src/assets/images/proimage3.png', ''], livelink:'https://yahiaportfolio.netlify.app', githublink: 'https://github.com/Ykx7/Portfolio',
     icon: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye-icon lucide-eye"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"/><circle cx="12" cy="12" r="3"/></svg>'
   },
 
@@ -175,8 +179,49 @@ transition={{ duration: 0.5 }}
 
 
 
-        <section id="projects" className="h-screen">
-          ssss
+        <section id="projects" className="h-screen px-20 flex items-center">
+        <div className="space-y-10">
+
+          <span className="text-4xl font-bold flex justify-center">My Projects</span>
+
+        <div className="flex flex-wrap gap-10">
+        {ProjectsArray.map((project, index) => (
+
+          <div
+          key={index} className="max-w-[425px] min-h-[400px] shadow-2xl rounded-2xl hover:scale-105 transition-all duration-500">
+
+            <img src={project.images[0]} className="w-full h-1/2 rounded-t-xl" alt="" />
+
+            <div className="p-4 flex flex-col gap-5">
+              <span className="flex justify-center text-xl font-bold">{project.title}</span>
+
+              <div className="flex flex-wrap gap-3">
+              {project.tech.map((tech, index) => (
+                <span key={index} className="rounded-full p-1 bg-gray-100">{tech}</span>
+              ))}
+              </div>
+
+<div className="flex gap-3">
+
+              <Link to={project.livelink}>
+                <AiOutlineEye className="w-6 h-6" />
+              </Link>
+
+              <Link to={project.githublink}>
+                <FiGithub className="w-6 h-6"/>
+              </Link>
+
+</div>
+
+            </div>
+          </div>
+        ))}
+</div>
+
+
+
+
+</div>
         </section>
 
 

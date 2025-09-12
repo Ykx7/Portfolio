@@ -12,7 +12,7 @@ import { Link } from "react-router-dom"
 import { SlSocialLinkedin } from "react-icons/sl";
 import { SiHackerone } from "react-icons/si";
 import { LuFacebook } from "react-icons/lu";
-import { FiGithub } from "react-icons/fi";
+import { FiGithub,FiPhone,FiTwitter } from "react-icons/fi";
 
 
 const Navbar = () => {
@@ -83,7 +83,7 @@ const Navbar = () => {
         <div className="flex gap-4">
           
           <Link to='/cart'>
-            <LuFacebook className="w-6 h-6" />
+            <FiPhone className="w-6 h-6" />
           </Link>
 
           <Link to='/shop'>
@@ -95,6 +95,9 @@ const Navbar = () => {
             <FiGithub className="w-6 h-6"/>
           </Link>
 
+          <Link to='/cart'>
+            <FiTwitter className="w-6 h-6" />
+          </Link>
 
           <Link to='https://hackerone.com/idkwhoiamx999?type=user'>
             <SiHackerone className="w-6 h-6"/>
