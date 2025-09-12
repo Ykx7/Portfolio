@@ -18,7 +18,7 @@ import { FiGithub } from "react-icons/fi";
 const Navbar = () => {
   return (
     <nav className="">
-      <div className="fixed w-full mx-auto flex items-center justify-between h-20 px-10">
+      <div className="fixed w-full mx-auto flex items-center justify-between h-20 px-10 bg-white opacity-80">
         {/* Left: Logo / Brand */}
         <Link to='/'>
           <span className="text-2xl">Yahia Kh</span>
@@ -60,10 +60,10 @@ const Navbar = () => {
 
             <NavigationMenuItem>
               <NavigationMenuLink
-                href="#experience"
+                href="#resume"
                 className="px-3 py-2 rounded-md hover:bg-accent hover:text-accent-foreground transition text-lg"
               >
-                Experience
+                Resume
               </NavigationMenuLink>
             </NavigationMenuItem>
 
@@ -91,7 +91,7 @@ const Navbar = () => {
           </Link>
 
 
-          <Link to='/shop'>
+          <Link to='https://github.com/Ykx7/'>
             <FiGithub className="w-6 h-6"/>
           </Link>
 

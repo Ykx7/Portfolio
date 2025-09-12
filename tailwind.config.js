@@ -7,6 +7,12 @@ module.exports = {
   ],
   theme: {
   	extend: {
+		keyframes: {
+      scroll: {
+        '0%': { transform: 'translateX(0)' },
+        '100%': { transform: 'translateX(-50%)' },
+      },
+	},
   		colors: {
   			mainColor: '#1DA1F2',
   			background: 'hsl(var(--background))',
