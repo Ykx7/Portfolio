@@ -8,6 +8,7 @@ import { Link } from "react-router-dom"
 import { Eye } from "lucide-react"
 import { FiGithub } from "react-icons/fi";
 import { AiOutlineEye } from "react-icons/ai";
+import ContactForm from "@/components/ContactForm"
 
 
 const Home = () => {
@@ -230,20 +231,74 @@ transition={{ duration: 0.5 }}
 
 
 
+        <section id="resume" className="h-screen flex flex-col items-center justify-center gap-10">
+          <span className="text-4xl font-bold">Resume</span>
+
+
+
+
+<span className="text-3xl">Freelance Web Developer</span>
+
+
+          <div className="flex flex-col gap-5 ">
+              <p className="max-w-[900px] text-lg">
+                As a developer, I combined my knowledge of frontend engineering with security. I designed and developed a full-featured e-commerce application with modern tools like React, Vite, TailwindCSS, Node.js, and Express. My focus has always been on building secure and user-friendly applications.
+
+Implemented authentication & authorization
+
+Added rate limiting and captcha and implemented security headers and other best practices for security Check my work <a href="http://localhost:5173/#projects" className="font-bold">Here</a>.
+              </p>
+          </div>
 
 
 
 
 
 
+              <span className="text-3xl">Security Researcher</span>
+
+            <div className="flex flex-col gap-5 ">
+              <p className="max-w-[900px] text-lg">I started my journey in cybersecurity as a Security Researcher, focusing on real-world applications And Playing Ctfs And Solve Labs.
+                 Over time, I reported more than 5 valid vulnerabilities across well-known companies.
+                  One of my biggest achievements was discovering a critical bug in Glassdoor. I also submitted valid security reports to Apple and Sony.
+
+Specialized in web application penetration testing (XSS, ATO, authentication bypass, etc.) And I create some automation and security tools that do some work and save time for me so i have a lot of experience and different skills
+
+and, Gained hands-on experience with OWASP Top 10 vulnerabilities 
+
+Built a strong foundation in web security practices For more info check the links below.</p>
 
 
-        <section id="resume" className="h-screen">
-          cccc
+<span className="font-semibold">My Hackerone Account: <a className="font-bold" href="https://hackerone.com/idkwhoiamx999">Hacker One</a></span>
+<span className="font-semibold">Apple Hall Of Fame In Décembre 2023 Yahya Khidour (Dz): <a className="font-bold" href="https://support.apple.com/fr-cm/122162">Apple</a></span>
+
+
+
+
+
+
+            </div>
+
+
         </section>
-        <section id="contact" className="h-screen">
-          Contact
+
+
+
+
+
+
+
+        <section id="contact" className="h-screen flex flex-col items-center justify-center">
+          <span className="text-4xl font-bold">Contact</span>
+
+          <div>
+            <ContactForm />
+          </div>
+
         </section>
+
+
+
 
       </div>
 

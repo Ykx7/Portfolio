@@ -82,11 +82,12 @@ const Navbar = () => {
 
         <div className="flex gap-4">
           
-          <Link to='/cart'>
-            <FiPhone className="w-6 h-6" />
-          </Link>
+<a href="tel:+213556042818" className="flex items-center gap-2">
+  <FiPhone className="w-6 h-6"/>
+</a>
 
-          <Link to='/shop'>
+
+          <Link to='https://www.linkedin.com/in/yahia-khidour-9254a0256/'>
             <SlSocialLinkedin className="w-6 h-6"/>
           </Link>
 
@@ -95,7 +96,7 @@ const Navbar = () => {
             <FiGithub className="w-6 h-6"/>
           </Link>
 
-          <Link to='/cart'>
+          <Link to='https://x.com/7xOneeeeeeeee9'>
             <FiTwitter className="w-6 h-6" />
           </Link>
 
