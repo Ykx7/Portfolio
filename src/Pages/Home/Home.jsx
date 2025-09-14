@@ -1,5 +1,8 @@
 import Navbar from "@/components/Navbar"
 import img from "../../assets/images/img7.jpg"
+import proimg1 from "../../assets/images/proimage1.png"
+import proimg2 from "../../assets/images/proimage2.png"
+import proimg3 from "../../assets/images/proimage3.png"
 import TextType from "@/components/TextType"
 import { motion } from "framer-motion"
 import PageWrapper from "@/components/PageWrapper"
@@ -46,13 +49,13 @@ const developmentLogos = [
 
 
 const ProjectsArray = [
-  { title: 'Ecommerce Web Application With Full Features', tech:['React', 'Tailwind','Nodejs', 'Express', 'MongoDB'], images:['http://localhost:5173/src/assets/images/proimage1.png', ''], livelink:'https://yahia-shop.netlify.app', githublink: '',
+  { title: 'Ecommerce Web Application With Full Features', tech:['React', 'Tailwind','Nodejs', 'Express', 'MongoDB'], images:[proimg1, ''], livelink:'https://yahia-shop.netlify.app', githublink: '',
     icon: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye-icon lucide-eye"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"/><circle cx="12" cy="12" r="3"/></svg>'
   },
-  { title: 'Mini Ecommerce Web Application', tech:['Vite', 'Tailwind','Nodejs', 'Express', 'MongoDB'], images:['http://localhost:5173/src/assets/images/proimage2.png', ''], livelink:'https://yahiastore.netlify.app/', githublink: '',
+  { title: 'Mini Ecommerce Web Application', tech:['Vite', 'Tailwind','Nodejs', 'Express', 'MongoDB'], images:[proimg2, ''], livelink:'https://yahiastore.netlify.app/', githublink: '',
     icon: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye-icon lucide-eye"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"/><circle cx="12" cy="12" r="3"/></svg>'
   },
-  { title: 'My Portfolio', tech:['Vite', 'Tailwind','Framer Motion', 'Shadcn'], images:['http://localhost:5173/src/assets/images/proimage3.png', ''], livelink:'https://yahiaportfolio.netlify.app', githublink: 'https://github.com/Ykx7/Portfolio',
+  { title: 'My Portfolio', tech:['Vite', 'Tailwind','Framer Motion', 'Shadcn'], images:[proimg3, ''], livelink:'https://yahiaportfolio.netlify.app', githublink: 'https://github.com/Ykx7/Portfolio',
     icon: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye-icon lucide-eye"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"/><circle cx="12" cy="12" r="3"/></svg>'
   },
 
