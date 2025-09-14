@@ -1,5 +1,5 @@
 import Navbar from "@/components/Navbar"
-import img from "../../assets/images/img5.jpg"
+import img from "../../assets/images/img7.jpg"
 import TextType from "@/components/TextType"
 import { motion } from "framer-motion"
 import PageWrapper from "@/components/PageWrapper"
@@ -97,6 +97,7 @@ const ProjectsArray = [
 
 
 <div className="flex gap-2 pt-3">
+  
 <MotionButton
 whileHover={{ scale: 1.1 }}
 whileTap={{ scale: 0.9 }}
@@ -185,7 +186,7 @@ transition={{ duration: 0.5 }}
 
           <span className="text-4xl font-bold flex justify-center">My Projects</span>
 
-        <div className="flex flex-wrap gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-10">
         {ProjectsArray.map((project, index) => (
 
           <div
@@ -288,7 +289,7 @@ Built a strong foundation in web security practices For more info check the link
 
 
 
-        <section id="contact" className="h-screen flex flex-col items-center justify-center">
+        <section id="contact" className="h-screen flex flex-col items-center justify-center gap-6">
           <span className="text-4xl font-bold">Contact</span>
 
           <div>
