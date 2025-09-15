@@ -1,8 +1,8 @@
 import Navbar from "@/components/Navbar"
-import img from "../../assets/images/img7.jpg"
-import proimg1 from "../../assets/images/proimage1.png"
-import proimg2 from "../../assets/images/proimage2.png"
-import proimg3 from "../../assets/images/proimage3.png"
+import img from "./assets/images/img7.jpg"
+import proimg1 from "./assets/images/proimage1.png"
+import proimg2 from "./assets/images/proimage2.png"
+import proimg3 from "./assets/images/proimage3.png"
 import TextType from "@/components/TextType"
 import { motion } from "framer-motion"
 import PageWrapper from "@/components/PageWrapper"
@@ -11,7 +11,7 @@ import { Link } from "react-router-dom"
 import { Eye } from "lucide-react"
 import { FiGithub } from "react-icons/fi";
 import { AiOutlineEye } from "react-icons/ai";
-import ContactForm from "@/components/ContactForm"
+import Contact from "@/components/Contact"
 
 
 const Home = () => {
@@ -302,7 +302,7 @@ Built a strong foundation in web security practices For more info check the link
           <span className="text-4xl font-bold">Contact</span>
 
           <div>
-            <ContactForm />
+            <Contact />
           </div>
 
         </section>
