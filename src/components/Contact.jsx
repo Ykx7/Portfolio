@@ -41,7 +41,7 @@ export default function Contact() {
 
 <div className="bg-slate-100 rounded-xl min-w-[800px]">
     <form onSubmit={sendEmail} className="p-6">
-        <label for="name">First name:</label><br/>
+        <label for="name">Full name:</label><br/>
         <Input placeholder="Enter your full name" type="text" id="name" name="name" className="w-full bg-slate-50"
           value={formData.name}
           onChange={handleChange}
