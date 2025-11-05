@@ -1,5 +1,5 @@
 import Navbar from "@/components/Navbar"
-import img from "./assets/images/img8.jpg"
+import img from "./assets/images/img9.jpg"
 import proimg1 from "./assets/images/proimage1.png"
 import proimg2 from "./assets/images/proimage2.png"
 import proimg3 from "./assets/images/proimage3.png"
